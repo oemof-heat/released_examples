@@ -1,0 +1,15 @@
+id,var_name,value,unit,reference,Comment,tag_1,tag_2,component
+1,nom_capacity_storage_th,0,MWh,,,,,storage_th
+2,nom_capacity_storage_el,100,MWh,,,,,storage_el
+3,nom_val_input_bth_storage_th,0,MW,,,,,storage_th
+4,nom_val_output_bth_storage_th,0,MW,,,,,storage_th
+5,nom_val_input_bel_storage_el,12.5,MW,,,,,storage_el
+6,nom_val_output_bel_storage_el,12.5,MW,,,,,storage_el
+7,H_L_FG_share_max,0.1167,1,,,,,chp
+8,P_max_woDH,1000,MW,,,,,chp
+9,P_min_woDH,100,MW,,,,,chp
+10,Eta_el_max_woDH,0.6,1,,,,,chp
+11,Eta_el_min_woDH,0.5,1,,,,,chp
+12,Q_CW_min_chp,47.22,MW,,,,,chp
+13,Beta_chp,0.15,1,,,,,chp
+14,nom_val_out_boiler,700,,,,,,boiler
