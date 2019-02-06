@@ -1,0 +1,40 @@
+# Configuration for RET.Con-Paper
+# Date: Thu 22nd of November 2018
+# Author: Jakob Wolf (jakob.wolf@beuth-hochschule.de)
+
+run_preprocessing: True
+run_model: True
+run_postprocessing: True
+make_plots: True #  just working with "run_single_scenario: False"
+
+debug: False
+solver: 'cbc'
+solver_verbose: False
+
+# Set False to run all three scenarios.
+# If run_single_scenario=True, select scenario_number.
+run_single_scenario: False
+scenario_number: 3
+
+# DATE AND TIME
+start_date: '1/1/2040'
+frequency: 'H'
+
+# FILE NAMES - WRITING
+filename_dumb: 'flexCHP'
+filename_logfile: 'flexCHP'
+
+# FILE NAMES - READING
+parameters_energy_system:
+  - '/data_raw/data_public/parameters_energy_system_01.csv'  # Storage: None
+  - '/data_raw/data_public/parameters_energy_system_02.csv'  # Storage: TES
+  - '/data_raw/data_public/parameters_energy_system_03.csv'  # Storage: Battery
+
+parameters_all_energy_systems: '/data_raw/data_public/parameters_all_energy_systems.csv'
+parameters_load_profile: '/data_raw/data_public/parameters_load_profiles.csv'
+time_series_loads_el: '/data_raw/data_confidential/time_series_60min_singleindex.csv'
+time_series_loads_heat: '/data_raw/data_confidential/Lastgang 2011_2012.xls'
+
+# PREPROCESSED DATA
+demand_time_series: '/data_preprocessed/demand_profiles_nominal.csv'
+demand_scatter_plot: '../data_preprocessed/demand_scatter_plot.png'
