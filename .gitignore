@@ -15,4 +15,5 @@ __pycache__
 *.xlsx
 **/venv/**
 !parameters_all_energy_systems.csv
+!parameters_load_profiles.csv
 !parameters_energy_system_0*.csv
