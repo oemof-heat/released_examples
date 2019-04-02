@@ -1,0 +1,57 @@
+# Configuration for IRES2019
+# Date: Thu 7th of January 2019
+# Author: Jakob Wolf (jakob.wolf@beuth-hochschule.de)
+
+run_preprocessing: True
+run_model: True
+run_postprocessing: True
+
+debug: False
+solver: 'cbc'
+solver_verbose: False
+
+# If run_single_scenario=True, select single scenario_number.
+run_single_scenario: False
+variation_number: 0  # set "0" for Base-Scenario
+
+# ELECTRICITY PRICE
+# Set False for using linear price dependency to residual load
+# Set True to use squared price dependency to residual load. A price factor will be applied on the
+#  nominal (max) Price to preserve the same average electricity price as in with linear dependency.
+price_el_quadratic: True
+
+# DATE AND TIME
+start_date: '1/1/2040'
+frequency: 'H'
+
+# FILE NAMES - WRITING
+filename_dumb: 'flexCHP_SysOpt'
+filename_logfile: 'flexCHP_SysOpt'
+
+# FILE NAMES - READING
+parameters_energy_system: '/data_raw/data_public/parameters_energy_system.csv'
+parameter_variation:
+  - '/data_raw/data_public/parameter_variation_base.csv'           # 0
+  - '/data_raw/data_public/parameter_variation_EES_capex_80.csv'   # 1
+  - '/data_raw/data_public/parameter_variation_EES_capex_90.csv'   # 2
+  - '/data_raw/data_public/parameter_variation_EES_capex_110.csv'  # 3
+  - '/data_raw/data_public/parameter_variation_EES_capex_120.csv'  # 4
+  - '/data_raw/data_public/parameter_variation_el_price_80.csv'    # 5
+  - '/data_raw/data_public/parameter_variation_el_price_90.csv'    # 6
+  - '/data_raw/data_public/parameter_variation_el_price_110.csv'   # 7
+  - '/data_raw/data_public/parameter_variation_el_price_120.csv'   # 8
+  - '/data_raw/data_public/parameter_variation_gas_price_80.csv'   # 9
+  - '/data_raw/data_public/parameter_variation_gas_price_90.csv'   # 10
+  - '/data_raw/data_public/parameter_variation_gas_price_110.csv'  # 11
+  - '/data_raw/data_public/parameter_variation_gas_price_120.csv'  # 12
+  - '/data_raw/data_public/parameter_variation_TES_capex_80.csv'   # 13
+  - '/data_raw/data_public/parameter_variation_TES_capex_90.csv'   # 14
+  - '/data_raw/data_public/parameter_variation_TES_capex_110.csv'  # 15
+  - '/data_raw/data_public/parameter_variation_TES_capex_120.csv'  # 16
+parameters_load_profile: '/data_raw/data_public/parameters_load_profiles.csv'
+time_series_loads_el: '/data_raw/data_confidential/time_series_60min_singleindex.csv'
+time_series_loads_heat: '/data_raw/data_confidential/Lastgang 2011_2012.xls'
+
+# PREPROCESSED DATA
+demand_time_series: '/data_preprocessed/demand_profiles_nominal.csv'
+demand_scatter_plot: '../results/plots/demand_scatter_plot.png'
