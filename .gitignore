@@ -17,3 +17,5 @@ __pycache__
 !parameters_all_energy_systems.csv
 !parameters_load_profiles.csv
 !parameters_energy_system_0*.csv
+!parameters_energy_system.csv
+!parameter_variation_*.csv
