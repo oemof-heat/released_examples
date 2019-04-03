@@ -63,17 +63,17 @@ sure your run the test in the environment where oemof is installed.
 If the installation was successful, the following message will be displayed:
 
 
-    \***************************** 
-    Solver installed with oemof:  
+    `*****************************`   
+    `Solver installed with oemof:`   
     
-    cbc: working  
-    glpk: not working  
-    gurobi: not working  
-    cplex: not working 
+    `cbc: working`  
+    `glpk: not working`  
+    `gurobi: not working`  
+    `cplex: not working`  
     
-    \***************************** 
-    oemof successfully installed.  
-    \***************************** 
+    `*****************************`  
+    `oemof successfully installed.`  
+    `*****************************`  
     
     
 * **Provide input data.** 
