@@ -74,6 +74,8 @@ If the installation was successful, the following message will be displayed:
     ***************************** 
     oemof successfully installed.  
     ***************************** 
+    
+    
 * **Provide input data.** 
 * **Check settings in configuration file.**
 How to change the config file?
