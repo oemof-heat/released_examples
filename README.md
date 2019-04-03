@@ -63,7 +63,7 @@ sure your run the test in the environment where oemof is installed.
 If the installation was successful, the following message will be displayed:
 
 
-    ***************************** 
+    \***************************** 
     Solver installed with oemof:  
     
     cbc: working  
@@ -71,9 +71,9 @@ If the installation was successful, the following message will be displayed:
     gurobi: not working  
     cplex: not working 
     
-    ***************************** 
+    \***************************** 
     oemof successfully installed.  
-    ***************************** 
+    \***************************** 
     
     
 * **Provide input data.** 
