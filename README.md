@@ -7,7 +7,7 @@ We apply the Open Energy Modelling Framework *oemof* in
 energy system analysis for dispatch and system optimizations.
 Our work focuses on modelling heat components with linear programming, 
 e.g., combined heat and power plants (CHP), heat pumps, 
-district heating networks, solar thermal collectors.
+district heating networks and solar thermal collectors.
 
 List of currently available models:
 - Highly flexible Combined Heat and Power Production (*flexCHP*)
@@ -44,12 +44,15 @@ the basic use of a terminal (e.g., enter a command or navigate to a directory).
 
 Preparation steps:
 * **Download or clone this repo.**
+Download the repository from this page (our GitHub repository) and unzip it to 
+a local directory of your choice or use Git to clone this repository.
 * **Install required packages.** You can use the `requirements.txt` file and pip 
 or install the packages listed in the `requirements.txt` file in any other way 
 you are familiar with. If you want to use pip open a terminal, navigate to the 
 downloaded directory and enter `pip install -r requirements.txt`.
 * **Download and install Cbc (an open-source mixed integer linear programming solver).** 
-For instructions have a look at the [oemof-documentation](https://oemof.readthedocs.io/en/stable/installation_and_setup.html) 
+For instructions have a look at the 
+[oemof-documentation](https://oemof.readthedocs.io/en/stable/installation_and_setup.html) 
 and scroll down to the section *Solver*, for Linux distributions, or
  *Solver for Windows*.
 * **Run installation test (optional).** 
@@ -77,11 +80,30 @@ If the installation was successful, the following message will be displayed:
     
     
 * **Provide input data.** 
-* **Check settings in configuration file.**
-How to change the config file?
-* **Run the program.** 
+The input data that needs to be provided differ from one model to another. 
+How to handle the input data and how you can run the model with your 
+own data is therefore described in the models individual readme-file.
+* **Check settings in configuration file.** 
+You find a configuration file (\*.yml) in the 
+directory ./experiment_config/. 
+It holds information and settings that are needed to run the program and 
+solve the optimizations problem 
+(e.g., solver settings, paths and file names of input data).
+The config file specifies your experiment. 
+Its structure and content differs for each model and is therefore described 
+individually in each model file.
+* **Run the program.**
+ Open a terminal. 
+ Navigate to the source code directory (/src/) of the model you like to run 
+ (e.g., my-computer/path-to-downloaded-file/released_examples/flexCHP_SysOpt/src/). 
+ Enter `python main.py`.
 * **Get the results.**
+See description in the models individual readme-file.
 * **Find out what else can be modelled with *oemof*!**
+The oemof-developer team provides several examples for applications on there 
+GitHub repository: 
+[github.com/oemof/oemof-examples](https://github.com/oemof/oemof-examples). 
+
 
 
 ## License
