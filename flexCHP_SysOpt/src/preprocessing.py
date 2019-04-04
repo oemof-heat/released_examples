@@ -19,15 +19,20 @@ def preprocess_timeseries(config_path):
 
     abs_path = os.path.dirname(os.path.abspath(os.path.join(__file__, '..')))
 
+    # Assumptions for load profile projections
     file_name_param = cfg['parameters_load_profile']
     file_path_param = abs_path + file_name_param
+
+    # Technical and economical specifications
     param_df = pd.read_csv(file_path_param, index_col=1)
     param_value = param_df['value']
 
+    # Electricity generation and demand
     file_path_ts_loads_el = abs_path + cfg['time_series_loads_el']
-    file_path_ts_loads_heat = abs_path + cfg['time_series_loads_heat']
-
     data = pd.read_csv(file_path_ts_loads_el, parse_dates=['utc_timestamp'])
+
+    # District heating demand
+    file_path_ts_loads_heat = abs_path + cfg['time_series_loads_heat']
     xls = pd.ExcelFile(file_path_ts_loads_heat)
     data_heat = pd.read_excel(
         xls, 'Daten', header=None, usecols='E',
