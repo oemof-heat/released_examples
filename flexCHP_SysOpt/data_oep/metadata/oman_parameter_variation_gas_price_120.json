@@ -8,7 +8,7 @@
 "context":
     {"homepage": "https://github.com/oemof-heat/released_examples/",
     "documentation": "https://github.com/oemof-heat/released_examples/blob/master/README.md",
-    "sourceCode": "https://github.com/oemof-heat/released_examples/tree/master/flexCHP_SysOpt/data_oep/metadata/oman_parameter_variation_gas_price_120.json",
+    "sourceCode": "https://github.com/oemof-heat/released_examples/blob/master/flexCHP_SysOpt/data_oep/metadata/oman_parameter_variation_gas_price_120.json",
     "contact": "https://github.com/oakca",
     "grantNo": "none"},
 "spatial":
