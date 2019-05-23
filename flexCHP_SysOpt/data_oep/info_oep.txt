@@ -1,5 +1,0 @@
-Important Info for OEP
-
-OEP API oedialect gives unknown errors, when following cases in table names inside sa.Table() are used.
-- table names containing '.'
-- table names containing big letters
