@@ -24,9 +24,9 @@ Contact: jakob-wo (jakob.wolf@beuth-hochschule.de)
 Dispatch optimization. Scenario comparison.  
 Published research:  
 J. Wolf, C. Pels Leusden, S. Köhler, and J. Launer, “Flexibilisierung
-von KWK-Anlagen für wachsende herausforderungen einer
-sicheren strom- und wärmeversorgung,” in *Regenerative-Energietechnik-
-Konferenz RET.Con 2019*, Nordhausen, 2019.
+von KWK-Anlagen für wachsende Herausforderungen einer
+sicheren strom- und wärmeversorgung,” in *2. Regenerative Energietechnik 
+Konferenz (RET.Con)*, Nordhausen, 2019.
 
 ### flexCHP_SysOpt
 System and dispatch optimization. Sensitivity analysis.  
